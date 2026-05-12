@@ -62,19 +62,72 @@ const photos = [
 ]
 
 let current = 0
-let activeImg = "A"
 
-const background = document.getElementById("background")
 const imgA = document.getElementById("imgA")
 const imgB = document.getElementById("imgB")
-const cardTitle = document.getElementById("cardTitle")
-const cardSub = document.getElementById("cardSub")
+const title = document.getElementById("cardTitle")
+const sub = document.getElementById("cardSub")
 const counter = document.getElementById("counter")
+const counterSmall = document.getElementById("counterSmall")
 const prevBtn = document.getElementById("prevBtn")
 const nextBtn = document.getElementById("nextBtn")
-const counterSmall = document.getElementById("counterSmall")
 const lightbox = document.getElementById("lightbox")
 const lightboxImg = document.getElementById("lightboxImg")
-const lightboxClose = document.getElementById("lightboxClose")
-const lightboxBackdrop = document.getElementById("lightboxBackdrop")
-const imageWrap = document.getElementById("imageWrap")
+const closeBtn = document.getElementById("lightboxClose")
+const backdrop = document.getElementById("lightboxBackdrop")
+const wrap = document.getElementById("imageWrap")
+const bg = document.getElementById("background")
+
+photos.forEach((p, i) => {
+  const div = document.createElement("div")
+  div.className = "bg-layer" + (i === 0 ? " active" : "")
+  div.style.backgroundImage = `url(${p.full})`
+  div.id = "bg-" + i
+  bg.appendChild(div)
+})
+
+function showPhoto(i) {
+  const p = photos[i]
+
+  const show = imgA.classList.contains("active") ? imgB : imgA
+  const hide = imgA.classList.contains("active") ? imgA : imgB
+
+  show.src = p.src
+  show.onload = () => {
+    show.classList.add("active")
+    hide.classList.remove("active")
+  }
+
+  document
+    .querySelectorAll(".bg-layer")
+    .forEach(b => b.classList.remove("active"))
+  document.getElementById("bg-" + i).classList.add("active")
+
+  title.textContent = p.title
+  sub.textContent = p.sub
+
+  counter.textContent = `${i + 1} / ${photos.length}`
+  counterSmall.textContent = `${i + 1} / ${photos.length}`
+
+  prevBtn.disabled = i === 0
+  nextBtn.disabled = i === photos.length - 1
+}
+
+nextBtn.onclick = () => current < photos.length - 1 && showPhoto(++current)
+prevBtn.onclick = () => current > 0 && showPhoto(--current)
+
+wrap.onclick = () => {
+  lightbox.classList.add("open")
+  lightboxImg.src = photos[current].full
+}
+
+closeBtn.onclick = () => lightbox.classList.remove("open")
+backdrop.onclick = () => lightbox.classList.remove("open")
+
+document.onkeydown = e => {
+  if (e.key === "ArrowRight") nextBtn.click()
+  if (e.key === "ArrowLeft") prevBtn.click()
+  if (e.key === "Escape") lightbox.classList.remove("open")
+}
+
+showPhoto(current)

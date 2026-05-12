@@ -34,7 +34,7 @@ body {
   opacity: 1;
 }
 
-.vignette {
+/* .vignette {
   position: fixed;
   inset: 0;
   z-index: 1;
@@ -44,7 +44,7 @@ body {
     rgba(0, 0, 0, 0.55) 100%
   );
   pointer-events: none;
-}
+} */
 
 .card {
   position: relative;
