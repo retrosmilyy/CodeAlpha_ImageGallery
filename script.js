@@ -56,8 +56,8 @@ const photos = [
   {
     src: "https://images.unsplash.com/photo-1735405659018-b63cdfc215de?q=80",
     full: "https://images.unsplash.com/photo-1735405659018-b63cdfc215de?q=90",
-    title: "Portrait in Blue",
-    sub: "Isabelle Caron · 2024",
+    title: "Night Sky",
+    sub: "Wallace Henry · 2024",
   },
 ]
 
