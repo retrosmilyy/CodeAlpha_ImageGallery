@@ -25,7 +25,7 @@ body {
   inset: -60px;
   background-size: cover;
   background-position: center;
-  filter: blur(45px) brightness(0.25) saturate(1.4);
+  filter: blur(0.5px) brightness(0.75) saturate(1.4);
   opacity: 0;
   transition: opacity 0.9s ease;
 }

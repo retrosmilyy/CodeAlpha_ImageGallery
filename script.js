@@ -54,8 +54,8 @@ const photos = [
     sub: "Nina Osei · 2024",
   },
   {
-    src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80",
-    full: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1400&q=90",
+    src: "https://images.unsplash.com/photo-1735405659018-b63cdfc215de?q=80",
+    full: "https://images.unsplash.com/photo-1735405659018-b63cdfc215de?q=90",
     title: "Portrait in Blue",
     sub: "Isabelle Caron · 2024",
   },
