@@ -1,176 +1,118 @@
 const categories = {
   Cars: [
     {
-      src: "https://cdn.pixabay.com/photo/2016/11/18/12/51/automobile-1834274_640.jpg",
-      full: "https://cdn.pixabay.com/photo/2016/11/18/12/51/automobile-1834274_1280.jpg",
+      src: "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=600&q=80",
+      full: "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1400&q=90",
       title: "Midnight Racer",
       sub: "Studio Shot · 2024",
     },
     {
-      src: "https://cdn.pixabay.com/photo/2017/03/27/14/56/auto-2179220_640.jpg",
-      full: "https://cdn.pixabay.com/photo/2017/03/27/14/56/auto-2179220_1280.jpg",
+      src: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=600&q=80",
+      full: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1400&q=90",
       title: "Open Road",
       sub: "Highway Series · 2023",
     },
     {
-      src: "https://cdn.pixabay.com/photo/2020/04/03/14/15/car-5000554_640.jpg",
-      full: "https://cdn.pixabay.com/photo/2020/04/03/14/15/car-5000554_1280.jpg",
-      title: "Classic Lines",
-      sub: "Vintage Series · 2022",
-    },
-    {
-      src: "https://cdn.pixabay.com/photo/2018/02/21/03/15/sunset-3169364_640.jpg",
-      full: "https://cdn.pixabay.com/photo/2018/02/21/03/15/sunset-3169364_1280.jpg",
-      title: "Speed & Form",
-      sub: "Track Day · 2024",
-    },
-    {
-      src: "https://cdn.pixabay.com/photo/2016/04/01/12/11/car-1300629_640.png",
-      full: "https://cdn.pixabay.com/photo/2016/04/01/12/11/car-1300629_1280.png",
+      src: "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?w=600&q=80",
+      full: "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?w=1400&q=90",
       title: "Red Beast",
       sub: "Supercar Series · 2023",
     },
   ],
   Animals: [
     {
-      src: "https://cdn.pixabay.com/photo/2016/11/14/04/45/elephant-1822636_640.jpg",
-      full: "https://cdn.pixabay.com/photo/2016/11/14/04/45/elephant-1822636_1280.jpg",
-      title: "Gentle Giant",
-      sub: "Safari · 2024",
+      src: "https://images.unsplash.com/photo-1474511320723-9a56873867b5?w=600&q=80",
+      full: "https://images.unsplash.com/photo-1474511320723-9a56873867b5?w=1400&q=90",
+      title: "Golden Gaze",
+      sub: "Wildlife · 2024",
     },
     {
-      src: "https://cdn.pixabay.com/photo/2017/02/07/16/47/kingfisher-2046453_640.jpg",
-      full: "https://cdn.pixabay.com/photo/2017/02/07/16/47/kingfisher-2046453_1280.jpg",
-      title: "Kingfisher",
-      sub: "Wildlife · 2023",
+      src: "https://images.unsplash.com/photo-1550358864-518f202c02ba?w=600&q=80",
+      full: "https://images.unsplash.com/photo-1550358864-518f202c02ba?w=1400&q=90",
+      title: "Gentle Giraffe",
+      sub: "Safari · 2023",
     },
     {
-      src: "https://cdn.pixabay.com/photo/2019/08/19/06/18/lion-4415196_640.jpg",
-      full: "https://cdn.pixabay.com/photo/2019/08/19/06/18/lion-4415196_1280.jpg",
-      title: "King of the Plains",
-      sub: "Safari · 2024",
-    },
-    {
-      src: "https://cdn.pixabay.com/photo/2016/11/29/09/16/hummingbird-1868052_640.jpg",
-      full: "https://cdn.pixabay.com/photo/2016/11/29/09/16/hummingbird-1868052_1280.jpg",
-      title: "Hummingbird",
-      sub: "Birds · 2022",
-    },
-    {
-      src: "https://cdn.pixabay.com/photo/2017/10/20/10/58/elephant-2870777_640.jpg",
-      full: "https://cdn.pixabay.com/photo/2017/10/20/10/58/elephant-2870777_1280.jpg",
-      title: "Arctic Stare",
-      sub: "Polar Series · 2022",
+      src: "https://images.unsplash.com/photo-1456926631375-92c8ce872def?w=600&q=80",
+      full: "https://images.unsplash.com/photo-1456926631375-92c8ce872def?w=1400&q=90",
+      title: "King of Plains",
+      sub: "Safari · 2023",
     },
   ],
   Nature: [
     {
-      src: "https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823_640.jpg",
-      full: "https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823_1280.jpg",
-      title: "Autumn Road",
-      sub: "Seasonal · 2024",
+      src: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=600&q=80",
+      full: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=1400&q=90",
+      title: "Verdant Stillness",
+      sub: "Forest Series · 2024",
     },
     {
-      src: "https://cdn.pixabay.com/photo/2016/05/05/02/37/sunset-1373171_640.jpg",
-      full: "https://cdn.pixabay.com/photo/2016/05/05/02/37/sunset-1373171_1280.jpg",
-      title: "Golden Sunset",
-      sub: "Landscape · 2023",
-    },
-    {
-      src: "https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_640.jpg",
-      full: "https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_1280.jpg",
-      title: "Milky Way",
-      sub: "Night Sky · 2024",
-    },
-    {
-      src: "https://cdn.pixabay.com/photo/2016/08/11/23/48/mountains-1587287_640.jpg",
-      full: "https://cdn.pixabay.com/photo/2016/08/11/23/48/mountains-1587287_1280.jpg",
+      src: "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=600&q=80",
+      full: "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=1400&q=90",
       title: "Alpine Solitude",
       sub: "Mountain Series · 2023",
     },
     {
-      src: "https://cdn.pixabay.com/photo/2017/09/14/11/07/forest-2748937_640.jpg",
-      full: "https://cdn.pixabay.com/photo/2017/09/14/11/07/forest-2748937_1280.jpg",
-      title: "Forest Light",
-      sub: "Forest Series · 2022",
+      src: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=600&q=80",
+      full: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1400&q=90",
+      title: "Passage of Gold",
+      sub: "Forest Light · 2024",
     },
   ],
   Cities: [
     {
-      src: "https://cdn.pixabay.com/photo/2016/11/23/15/48/audience-1853662_640.jpg",
-      full: "https://cdn.pixabay.com/photo/2016/11/23/15/48/audience-1853662_1280.jpg",
-      title: "City Lights",
+      src: "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=600&q=80",
+      full: "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=1400&q=90",
+      title: "City of Light",
       sub: "Urban Series · 2024",
     },
     {
-      src: "https://cdn.pixabay.com/photo/2016/11/22/19/08/budapest-1850010_640.jpg",
-      full: "https://cdn.pixabay.com/photo/2016/11/22/19/08/budapest-1850010_1280.jpg",
-      title: "Budapest Night",
+      src: "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=600&q=80",
+      full: "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=1400&q=90",
+      title: "Neon Nights",
       sub: "Night Series · 2023",
     },
     {
-      src: "https://cdn.pixabay.com/photo/2017/01/18/16/46/hong-kong-1990268_640.jpg",
-      full: "https://cdn.pixabay.com/photo/2017/01/18/16/46/hong-kong-1990268_1280.jpg",
-      title: "Hong Kong",
-      sub: "Asia Series · 2024",
-    },
-    {
-      src: "https://cdn.pixabay.com/photo/2016/10/12/23/37/architecture-1736972_640.jpg",
-      full: "https://cdn.pixabay.com/photo/2016/10/12/23/37/architecture-1736972_1280.jpg",
-      title: "Glass & Steel",
-      sub: "Architecture · 2023",
-    },
-    {
-      src: "https://cdn.pixabay.com/photo/2015/09/02/13/24/city-919049_640.jpg",
-      full: "https://cdn.pixabay.com/photo/2015/09/02/13/24/city-919049_1280.jpg",
-      title: "The Grid",
-      sub: "Aerial View · 2022",
+      src: "https://images.unsplash.com/photo-1444723121867-7a241cacace9?w=600&q=80",
+      full: "https://images.unsplash.com/photo-1444723121867-7a241cacace9?w=1400&q=90",
+      title: "Rush Hour",
+      sub: "Street Life · 2022",
     },
   ],
   Food: [
     {
-      src: "https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395_640.jpg",
-      full: "https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395_1280.jpg",
-      title: "Perfect Pizza",
-      sub: "Italian · 2024",
+      src: "https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=600&q=80",
+      full: "https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=1400&q=90",
+      title: "Morning Feast",
+      sub: "Brunch Series · 2024",
     },
     {
-      src: "https://cdn.pixabay.com/photo/2018/07/14/15/27/fantasy-3537357_640.jpg",
-      full: "https://cdn.pixabay.com/photo/2018/07/14/15/27/fantasy-3537357_1280.jpg",
-      title: "Sweet Layers",
-      sub: "Dessert · 2023",
-    },
-    {
-      src: "https://cdn.pixabay.com/photo/2016/11/06/23/19/spaghetti-1804457_640.jpg",
-      full: "https://cdn.pixabay.com/photo/2016/11/06/23/19/spaghetti-1804457_1280.jpg",
-      title: "Pasta Night",
-      sub: "Italian · 2024",
-    },
-    {
-      src: "https://cdn.pixabay.com/photo/2017/06/29/20/09/the-sushi-2456981_640.jpg",
-      full: "https://cdn.pixabay.com/photo/2017/06/29/20/09/the-sushi-2456981_1280.jpg",
-      title: "Sushi Art",
-      sub: "Japanese · 2023",
-    },
-    {
-      src: "https://cdn.pixabay.com/photo/2014/11/05/15/57/salmon-518032_640.jpg",
-      full: "https://cdn.pixabay.com/photo/2014/11/05/15/57/salmon-518032_1280.jpg",
+      src: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80",
+      full: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1400&q=90",
       title: "Plated Perfection",
-      sub: "Fine Dining · 2022",
+      sub: "Fine Dining · 2023",
+    },
+    {
+      src: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80",
+      full: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1400&q=90",
+      title: "Golden Hour Meal",
+      sub: "Restaurant · 2022",
     },
   ],
 }
 
+// state
 let activeCategory = "Cars"
 let currentIndex = 0
 let activeImg = "A"
 
+// dom references
 const imgA = document.getElementById("imgA")
 const imgB = document.getElementById("imgB")
 const cardTitle = document.getElementById("cardTitle")
 const cardSub = document.getElementById("cardSub")
-const counter = document.getElementById("counter")
 const catBadge = document.getElementById("catBadge")
+const counter = document.getElementById("counter")
 const counterSmall = document.getElementById("counterSmall")
 const prevBtn = document.getElementById("prevBtn")
 const nextBtn = document.getElementById("nextBtn")
@@ -185,10 +127,18 @@ const myCategories = document.getElementById("categories")
 Object.entries(categories).forEach(([catName, photos]) => {
   photos.forEach((photo, i) => {
     const layer = document.createElement("div")
-    layer.className = "by-layer"
-    layer.style.backgroundImage = "url(${photo.full})"
-    layer.id = "bg-${catName}-${i}"
+    layer.className = "bg-layer"
+    layer.style.backgroundImage = `url(${photo.src})`
+    layer.id = `bg-${catName}-${i}`
     myBackground.appendChild(layer)
+  })
+})
+
+// preload all images in the background so they are ready before you click
+Object.values(categories).forEach(photos => {
+  photos.forEach(photo => {
+    const preload = new Image()
+    preload.src = photo.src
   })
 })
 
@@ -209,14 +159,7 @@ Object.keys(categories).forEach(catName => {
 
   myCategories.appendChild(btn)
 })
-
-function showPhoto(index) {
-  const photos = categories[activeCategory]
-  const photo = photos[index]
-
-  const incoming = activeImg === "A" ? imgB : imgA
-}
-//showing photos//
+//showing pic
 function showPhoto(index) {
   const photos = categories[activeCategory]
   const photo = photos[index]
@@ -224,9 +167,10 @@ function showPhoto(index) {
   const incoming = activeImg === "A" ? imgB : imgA
   const outgoing = activeImg === "A" ? imgA : imgB
 
+  incoming.src = ""
   incoming.src = photo.src
+
   incoming.onload = () => {
-    // start loading the image // wait until it has fully loaded, THEN run this //
     incoming.classList.add("active")
     outgoing.classList.remove("active")
     activeImg = activeImg === "A" ? "B" : "A"
@@ -248,7 +192,7 @@ function showPhoto(index) {
   nextBtn.disabled = index === photos.length - 1
 }
 
-//buttons
+// next button
 nextBtn.addEventListener("click", () => {
   const total = categories[activeCategory].length
   if (currentIndex < total - 1) {
@@ -257,6 +201,7 @@ nextBtn.addEventListener("click", () => {
   }
 })
 
+// prev button
 prevBtn.addEventListener("click", () => {
   if (currentIndex > 0) {
     currentIndex--
@@ -264,7 +209,6 @@ prevBtn.addEventListener("click", () => {
   }
 })
 
-//keyboard
 document.addEventListener("keydown", e => {
   if (lightbox.classList.contains("open")) {
     if (e.key === "Escape") closeLightbox()
@@ -273,3 +217,36 @@ document.addEventListener("keydown", e => {
   if (e.key === "ArrowRight") nextBtn.click()
   if (e.key === "ArrowLeft") prevBtn.click()
 })
+
+// swipe on mobile
+let touchStartX = 0
+imageWrap.addEventListener("touchstart", e => {
+  touchStartX = e.touches[0].clientX
+})
+imageWrap.addEventListener("touchend", e => {
+  const diff = touchStartX - e.changedTouches[0].clientX
+  if (diff > 50) nextBtn.click()
+  if (diff < -50) prevBtn.click()
+})
+
+// lightbox
+imageWrap.addEventListener("click", () => {
+  lightboxImg.src = categories[activeCategory][currentIndex].full
+  lightbox.classList.add("open")
+})
+
+function closeLightbox() {
+  lightbox.classList.remove("open")
+}
+lightboxClose.addEventListener("click", closeLightbox)
+lightboxBackdrop.addEventListener("click", closeLightbox)
+
+imgA.src = categories[activeCategory][0].src
+imgA.onload = () => imgA.classList.add("active")
+imgA.onerror = () => imgA.classList.add("active")
+cardTitle.textContent = categories[activeCategory][0].title
+cardSub.textContent = categories[activeCategory][0].sub
+catBadge.textContent = activeCategory
+counter.textContent = `01 / 0${categories[activeCategory].length}`
+counterSmall.textContent = `1 / ${categories[activeCategory].length}`
+document.getElementById(`bg-${activeCategory}-0`).classList.add("active")

@@ -25,7 +25,7 @@ body {
   inset: -60px;
   background-size: cover;
   background-position: center;
-  filter: blur(45px) brightness(0.25) saturate(1.4); /* fixed blur */
+  filter: blur(0.2px) brightness(0.25) saturate(1.4);
   opacity: 0;
   transition: opacity 0.9s ease;
 }
@@ -266,7 +266,7 @@ body {
   z-index: 200;
   display: flex;
   align-items: center;
-  justify-content: center; /* fixed — removed hardcoded left: 32.5% */
+  justify-content: center;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.35s ease;
