@@ -134,11 +134,14 @@ Object.entries(categories).forEach(([catName, photos]) => {
   })
 })
 
-// preload all images in the background so they are ready before you click
+// preload thumbnails + full lightbox images
 Object.values(categories).forEach(photos => {
   photos.forEach(photo => {
-    const preload = new Image()
-    preload.src = photo.src
+    const thumb = new Image()
+    thumb.src = photo.src
+
+    const full = new Image()
+    full.src = photo.full
   })
 })
 
@@ -159,6 +162,7 @@ Object.keys(categories).forEach(catName => {
 
   myCategories.appendChild(btn)
 })
+
 //showing pic
 function showPhoto(index) {
   const photos = categories[activeCategory]

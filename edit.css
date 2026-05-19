@@ -350,9 +350,6 @@ body {
   .card {
     width: 100%;
   }
-  .card-image-wrap {
-    aspect-ratio: 4 / 3;
-  }
   .cat-btn {
     font-size: 0.6rem;
     padding: 7px 14px;
