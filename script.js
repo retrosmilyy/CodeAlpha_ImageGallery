@@ -134,7 +134,7 @@ Object.entries(categories).forEach(([catName, photos]) => {
   })
 })
 
-// preload thumbnails + full lightbox images
+// preload lightbox images
 Object.values(categories).forEach(photos => {
   photos.forEach(photo => {
     const thumb = new Image()
